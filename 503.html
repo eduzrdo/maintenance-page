@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Atualização em andamento</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      color: #373739;
+      background-color: oklch(0.985 0.002 247.839);
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100dvh;
+      padding: 2rem 2rem 4rem;
+    }
+
+    .message-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      text-align: center;
+      margin-top: -4rem;
+    }
+
+    .animation {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.125rem;
+    }
+
+    @media screen and (max-width: 640px) {
+      .message-container {
+        margin-top: -2rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.844rem;
+      }
+    }
+
+    @media screen and (min-width: 1700px) {
+      .animation {
+        max-width: 900px;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <dotlottie-player src="https://tilary.sfo3.digitaloceanspaces.com/assets/pages/maintenance_animation.json"
+      background="transparent" speed="1" class="animation" loop autoplay></dotlottie-player>
+
+    <div class="message-container">
+      <h1>Estamos atualizando o painel administrativo!</h1>
+
+      <p>Volte em alguns minutos e atualize a tela!</p>
+    </div>
+  </main>
+</body>
+
+</html>
