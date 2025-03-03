@@ -35,7 +35,6 @@
       justify-content: center;
       align-items: center;
       height: 100dvh;
-      overflow-y: auto;
       padding: 2rem 2rem 4rem;
     }
 
@@ -51,12 +50,6 @@
     .animation {
       width: 100%;
       max-width: 500px;
-      height: auto;
-    }
-
-    .animation-test {
-      width: 100%;
-      max-width: 200px;
       height: auto;
     }
 
@@ -100,23 +93,25 @@
 
 <body>
   <main>
-    <h3>JSON File hosted in Digital Ocean</h3>
-    <dotlottie-player src="https://tilary.sfo3.digitaloceanspaces.com/assets/pages/maintenance_animation.json"
-      background="transparent" speed="1" class="animation" loop autoplay></dotlottie-player>
-
-    <h3>LOTTIE File hosted in Digital Ocean</h3>
+    <h4>Digital Ocean</h4>
     <dotlottie-player
       src="https://tilary.sfo3.digitaloceanspaces.com/assets/pages/dotlottie-maintenance_animation.lottie"
       background="transparent" speed="1" class="animation" loop autoplay></dotlottie-player>
 
-    <h3>File hosted in Lottie Server</h3>
-    <dotlottie-player src="https://lottie.host/e057fabf-66dd-4824-ba66-d215e82d61ce/Dn8cWJNVTe.lottie"
-      background="transparent" speed="1" class="animation-test" loop autoplay></dotlottie-player>
+    <h4>Firebase .json</h4>
+    <dotlottie-player
+      src="https://firebasestorage.googleapis.com/v0/b/hassefe-c7e1e.firebasestorage.app/o/maintenance_animation.json?alt=media&token=d9f9f8bb-2ff5-4c3f-8e34-4fa04c86c927"
+      background="transparent" speed="1" class="animation" loop autoplay></dotlottie-player>
 
-    <h3>File hosted in GitHub</h3>
+    <h4>Firebase .lottie</h4>
+    <dotlottie-player
+      src="https://firebasestorage.googleapis.com/v0/b/hassefe-c7e1e.firebasestorage.app/o/dotlottie-maintenance_animation.lottie?alt=media&token=34f4cc3e-9eb6-4122-8500-a934b84d3186"
+      background="transparent" speed="1" class="animation" loop autoplay></dotlottie-player>
+
+    <h4>Github</h4>
     <dotlottie-player
       src="https://raw.githubusercontent.com/eduzrdo/maintenance-page/main/dotlottie-maintenance_animation.lottie"
-      background="transparent" speed="1" class="animation-test" loop autoplay></dotlottie-player>
+      background="transparent" speed="1" class="animation" loop autoplay></dotlottie-player>
 
     <div class="message-container">
       <h1>Estamos atualizando o painel administrativo!</h1>
